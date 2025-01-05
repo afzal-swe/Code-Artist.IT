@@ -40,48 +40,141 @@
 
 <main id="main">
 
-    <!-- ======= Get Started Section ======= -->
-    <section id="get-started" class="get-started section-bg">
-      <div class="container">
+   <!-- ======= Testimonials Section ======= -->
+   <section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
 
-        <div class="row justify-content-between gy-4">
+      <div class="section-header">
+        <h2>Best Services & Client Feedbacks</h2>
+        <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
+      </div>
 
-          <div class="col-lg-12 d-flex align-items-center" data-aos="fade-up">
-            <div class="content">
-              <h3 class="text-info">Code Artist.IT is the Best for your Business Solution !.</h3>
-              <p>Code Artist.IT Limited is a Software, Website, ecommerce and Mobile Application Development service provider company in Bangladesh. Not just a software company but we have gained the faith of customers and positioned as one of the best software development company in Bangladesh since 2014. We aim to provide fully interactive and cost-effective solutions by establishing a bridge between the latest Smart Technologies. We have an excellent team of experts who are highly skilled in software architects, software engineers, and determined solid growth in the web solution market. Our mission is 100% client satisfaction by delivering creative and reliable solutions according to our client's needs. We focused on versatile project management intending to provide Software, Website, eCommerce and Mobile App other solutions with global acceptability. We are one of Best software development companies in Bangladesh. We help companies make great software. We cover every stage of software development from conceptualization and design to development, testing, and deployment. With our team of highly skilled professionals and extensive experience in various industries, we deliver tailored software solutions that meet our clients' unique business needs.</p>
-              
+      <div class="slides-2 swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
             </div>
-          </div>
+          </div><!-- End testimonial item -->
 
-          
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
 
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
-    </section><!-- End Get Started Section -->
+
+    </div>
+  </section><!-- End Testimonials Section -->
 
     <!-- ======= Constructions Section ======= -->
     <section id="constructions" class="constructions">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Ready Software</h2>
+          <h2>Our Innovative Products</h2>
           
         </div>
 
         <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url({{ asset('frontend/assets/img/constructions-1.jpg') }});"></div>
+                  <div class="card-bg" style="background-image: url({{ asset('frontend/assets/img/constructions-2.jpg') }});"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <div class="d-flex justify-content-end mt-2">
+                      <div class="btn bg-info-subtle">
+                        <a href="#" class="readmore stretched-link"><b>Order Now</b></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,6 +191,11 @@
                   <div class="card-body">
                     <h4 class="card-title">Possimus ut sed velit assumenda</h4>
                     <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <div class="d-flex justify-content-end mt-2">
+                      <div class="btn bg-info-subtle">
+                        <a href="#" class="readmore stretched-link"><b>Order Now</b></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -114,6 +212,11 @@
                   <div class="card-body">
                     <h4 class="card-title">Error beatae dolor inventore aut</h4>
                     <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                    <div class="d-flex justify-content-end mt-2">
+                      <div class="btn bg-info-subtle">
+                        <a href="#" class="readmore stretched-link"><b>Order Now</b></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -130,6 +233,11 @@
                   <div class="card-body">
                     <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
                     <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                    <div class="d-flex justify-content-end mt-2">
+                      <div class="btn bg-info-subtle">
+                        <a href="#" class="readmore stretched-link"><b>Order Now</b></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -146,7 +254,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Core Services</h2>
+          <h2>Sister Concern of RSB</h2>
           
         </div>
 
@@ -159,7 +267,7 @@
               </div>
               <h3>Nesciunt Mete</h3>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -170,7 +278,7 @@
               </div>
               <h3>Eosle Commodi</h3>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -181,7 +289,7 @@
               </div>
               <h3>Ledo Markt</h3>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -192,7 +300,7 @@
               </div>
               <h3>Asperiores Commodit</h3>
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -203,7 +311,7 @@
               </div>
               <h3>Velit Doloremque</h3>
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -214,7 +322,7 @@
               </div>
               <h3>Dolori Architecto</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -229,28 +337,33 @@
     <section id="features" class="features section-bg">
       <div class="container" data-aos="fade-up">
 
+        <div class="section-header">
+          <h2>Our Timelines</h2>
+          
+        </div>
+
         <ul class="nav nav-tabs row  g-2 d-flex">
 
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <h4>Modisit</h4>
+              <h4>Recent Services</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>Praesenti</h4>
+              <h4>Running Orders</h4>
             </a><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Explica</h4>
+              <h4>Recent Events</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <h4>Nostrum</h4>
+              <h4>Upcoming Events</h4>
             </a>
           </li><!-- End tab nav item -->
 
@@ -349,7 +462,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Projects</h2>
+          <h2>Our Developed Software Demos</h2>
           <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
         </div>
 
@@ -357,10 +470,10 @@
 
           <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">Remodeling</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-repairs">Repairs</li>
-            <li data-filter=".filter-design">Design</li>
+            <li data-filter=".filter-remodeling">Softwares</li>
+            <li data-filter=".filter-construction">Mobile Apps</li>
+            <li data-filter=".filter-repairs">IoT Devices</li>
+            <li data-filter=".filter-design">Others</li>
           </ul><!-- End Projects Filters -->
 
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -516,114 +629,7 @@
       </div>
     </section><!-- End Our Projects Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
-        </div>
-
-        <div class="slides-2 swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{{ asset('frontend/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{{ asset('frontend/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{{ asset('frontend/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{{ asset('frontend/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{{ asset('frontend/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
+   
 
     <!-- ======= Recent Blog Posts Section ======= -->
     <section id="recent-blog-posts" class="recent-blog-posts">
@@ -632,7 +638,7 @@
     
     
   <div class=" section-header">
-        <h2>Recent Blog Posts</h2>
+        <h2>Blogs</h2>
         <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
       </div>
 
@@ -737,6 +743,628 @@
     </section>
     <!-- End Recent Blog Posts Section -->
 
-  </main>
 
-  @endsection
+
+
+
+   
+
+
+
+  <style>
+    /* General styles */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_padding {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section_title_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section_heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.brand_sliderarrow {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.brand_sliderarrow::before,
+.brand_sliderarrow::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #333;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    display: block;
+}
+
+.brand_sliderarrow::after {
+    transform: rotate(180deg);
+}
+
+/* Slider styles */
+.top_brand_slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.top_brand_item {
+    flex: 0 0 150px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top_brand_item:hover {
+    transform: scale(1.1);
+}
+
+.top_brand_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.brand_item_name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Slider navigation */
+.slider_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider_nav.left {
+    left: 10px;
+}
+
+.slider_nav.right {
+    right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .top_brand_item {
+        flex: 0 0 150px;
+    }
+
+    .section_heading {
+        font-size: 20px;
+    }
+}
+
+  </style>
+
+   <!-- top brand -->
+   <section class="top_brand section_padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Expartics</h2>
+       
+      </div>
+        <!-- top brand content -->
+        <div class="top_brand_content">
+          
+            <!-- slider -->
+            <div class="top_brand_slider">
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/FOSSIL.png') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">Fossil</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/KALYA_SHASTRA.jpg') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">Lenovo</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/LAKME.png') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">LAKME</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/lavie.png') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">lavie</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/oneplus.jpg') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">oneplus</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/PUMA.png') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">PUMA</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/samsung1.jpg') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">Samsung</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/ADIDAS.png') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">Adidas</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/apple.jpg') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">Apple</div>
+                </a>
+                <!-- item -->
+                <a href="" class="top_brand_item">
+                    <!-- image -->
+                    <div class="top_brand_image">
+                        <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" alt="">
+                    </div>
+                    <!-- top brand name -->
+                    <div class="brand_item_name">Fizzy Goblet</div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <script>
+      // Select the slider container
+
+// Select the slider container
+const slider = document.querySelector('.top_brand_slider');
+
+// Create pagination buttons
+const sliderButtonsContainer = document.createElement('div');
+sliderButtonsContainer.classList.add('slider_buttons');
+
+const topBrandItems = document.querySelectorAll('.top_brand_item');
+topBrandItems.forEach((_, index) => {
+    const button = document.createElement('div');
+    button.classList.add('slider_button');
+    if (index === 0) button.classList.add('active');
+    sliderButtonsContainer.appendChild(button);
+});
+
+slider.parentElement.appendChild(sliderButtonsContainer);
+
+// Auto-slide functionality
+let scrollAmount = 0;
+const slideInterval = 3000; // Time in milliseconds
+let currentIndex = 0;
+
+function autoSlide() {
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+    // Scroll the slider
+    if (scrollAmount < maxScroll) {
+        scrollAmount += 200; // Adjust scroll step as needed
+        slider.scrollBy({ left: 200, behavior: 'smooth' });
+        updateActiveButton();
+    } else {
+        // Reset to the beginning when reaching the end
+        scrollAmount = 0;
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+        currentIndex = 0;
+        updateActiveButton();
+    }
+}
+
+function updateActiveButton() {
+    const buttons = document.querySelectorAll('.slider_button');
+    buttons.forEach((button, index) => {
+        button.classList.toggle('active', index === currentIndex);
+    });
+    currentIndex = (currentIndex + 1) % topBrandItems.length;
+}
+
+// Start the auto-slide
+setInterval(autoSlide, slideInterval);
+    </script>
+</section>
+<!-- top brand end -->
+
+
+
+
+ <!-- ======= Stats Counter Section ======= -->
+ <section id="stats-counter" class="stats-counter section-bg">
+  <div class="container">
+    <div class="section-header">
+      <h2>We Have</h2>
+      {{-- <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p> --}}
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center">
+          <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+          <div>
+            <span style="display: inline;" data-purecounter-start="0" data-purecounter-end="420" data-purecounter-duration="1" class="purecounter"></span><span style="display: inline;">+</span>
+            <p><b>Happy Clients</b></p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center">
+          <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+          <div>
+            <span style="display: inline;" data-purecounter-start="0" data-purecounter-end="499" data-purecounter-duration="1" class="purecounter"></span><span style="display: inline;">+</span>
+            <p><b>Successful Delivery</b></p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center">
+          <i class="bi bi-people color-pink flex-shrink-0"></i>
+          <div>
+            <span style="display: inline;" data-purecounter-start="0" data-purecounter-end=" 45" data-purecounter-duration="1" class="purecounter"></span><span style="display: inline;">+</span>
+            <p><b>Exparts</b></p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center">
+          <i class="bi bi-headset color-green flex-shrink-0"></i>
+          <div>
+            <span style="display: inline;" data-purecounter-start="0" data-purecounter-end="  4" data-purecounter-duration="1" class="purecounter"></span><span style="display: inline;">+</span>
+            <p><b>Years of Experience</b></p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+    </div>
+</section><!-- End Stats Counter Section -->
+
+
+<style>
+
+
+/* General section styles */
+#brands {
+  padding: 60px 0;
+  background: #f7f7f7;
+}
+
+#brands .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#brands .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+#brands .section-header p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Swiper container */
+.swiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Swiper slides */
+.swiper-slide {
+  /* /* flex: 0 0 150px; */
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+/* Brand item */
+.brand-item {
+  padding: 20px;
+}
+
+.brand-item img.brand-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Swiper pagination */
+.swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #999;
+  opacity: 0.7;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #333;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+</style>
+
+<section id="brands" class="brands section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <h2>Our Honorable Clients</h2>
+      <p>Trusted by some of the world's top brands</p>
+    </div>
+
+    <div class="slides-2 swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" class="brand-img" alt="Brand 1">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" class="brand-img" alt="Brand 2">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" class="brand-img" alt="Brand 3">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" class="brand-img" alt="Brand 4">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" class="brand-img" alt="Brand 5">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+
+</section>
+
+<section class="top_brand section_padding">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Service Areas</h2>
+     
+    </div>
+      <!-- top brand content -->
+      <div class="top_brand_content">
+        
+          <!-- slider -->
+          <div class="top_brand_slider">
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/FOSSIL.png') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">Fossil</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/KALYA_SHASTRA.jpg') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">Lenovo</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/LAKME.png') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">LAKME</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/lavie.png') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">lavie</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/oneplus.jpg') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">oneplus</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/PUMA.png') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">PUMA</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/samsung1.jpg') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">Samsung</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/ADIDAS.png') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">Adidas</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/apple.jpg') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">Apple</div>
+              </a>
+              <!-- item -->
+              <a href="" class="top_brand_item">
+                  <!-- image -->
+                  <div class="top_brand_image">
+                      <img src="{{ asset('frontend/image/brand/FIZZY_GOBLET.png') }}" alt="">
+                  </div>
+                  <!-- top brand name -->
+                  <div class="brand_item_name">Fizzy Goblet</div>
+              </a>
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+
+</section>
+
+
+</main>
+
+@endsection
