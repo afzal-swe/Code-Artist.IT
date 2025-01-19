@@ -27,7 +27,7 @@
           <li class="dropdown"><a href="#"><span>People</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Advisory Panel</a></li>
-              <li><a href="#">Managerial Panel</a></li>
+              <li><a href="{{ route('managerial_panel.view') }}">Managerial Panel</a></li>
               <li><a href="#">Full Time Employee</a></li>
               <li><a href="#">Project Based Employee</a></li>
               <li><a href="#">Intern</a></li>

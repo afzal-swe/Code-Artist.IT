@@ -61,6 +61,43 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Nav Bar
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">0</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage User</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                People Panel
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">0</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('people_panel.view') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage Panel</p>
+                </a>
+              </li>
+            </ul>
+          </li>
 
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -73,7 +110,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('banner.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Banner</p>
                 </a>
@@ -85,16 +122,16 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
-                Our Services
+                Client Feedback
                 <i class="fas fa-angle-left right"></i>
                 
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('feedback.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Services</p>
+                  <p>Manage Feedback</p>
                 </a>
               </li>
             </ul>
@@ -111,7 +148,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('innovative_product.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Products</p>
                 </a>
@@ -130,7 +167,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('sister_concern.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Sister Concern</p>
                 </a>
@@ -149,36 +186,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('our_timeline.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Recent Services</p>
+                  <p>Manage Timeline</p>
                 </a>
               </li>
             </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Running Orders</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Recent Events</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Upcoming Events</p>
-                </a>
-              </li>
-            </ul>
+           
           </li>
 
           <li class="nav-item">
@@ -192,33 +206,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('development_software.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Softwares Manage</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mobile Apps</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>IoT Devices Manage</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Others</p>
+                  <p>Manage Development</p>
                 </a>
               </li>
             </ul>
@@ -235,7 +225,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('blogs.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Blogs</p>
                 </a>
@@ -254,7 +244,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('our_expartics.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Expartics</p>
                 </a>
@@ -273,7 +263,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('we_have.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage We Have</p>
                 </a>
@@ -292,7 +282,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('clients.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Clients</p>
                 </a>
@@ -311,7 +301,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('service_areas.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Service</p>
                 </a>
@@ -347,7 +337,7 @@
         
           
           <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
               <p>Documentation</p>
             </a>
@@ -364,25 +354,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
+                <a href="{{ route('notice.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Notice</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
+                <a href="{{ route('seo.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Seo Section</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
+                <a href="{{ route('social.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Social Section</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
+                <a href="{{ route('website_settings.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Website Setting</p>
                 </a>
@@ -395,19 +385,19 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
-                Login & Register
+                Logout & Password
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
+                <a href="{{ route('admin.password_change') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Change Password</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
+                <a id="logout" href="{{ route('admin.logout') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Logout</p>
                 </a>
