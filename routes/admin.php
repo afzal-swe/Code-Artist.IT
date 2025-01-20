@@ -36,7 +36,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
                 Route::get('/', 'People_Panel')->name('people_panel.view');
                 Route::post('/store', 'People_Panel_Store')->name('people_panel.store');
                 Route::get('/status/{id}', 'People_Panel_Status')->name('people_panel.status');
-                Route::get('/delete/{id}', 'People_Panel_Delete')->name('people_panel.status');
+                Route::get('/delete/{id}', 'People_Panel_Delete')->name('people_panel.delete');
             });
         }); //end
 

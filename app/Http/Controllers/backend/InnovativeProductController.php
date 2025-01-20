@@ -26,7 +26,7 @@ class InnovativeProductController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'products_img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Ensures the uploaded file is an image
+            'products_img' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
         $image = $request->file('products_img'); // Retrieve the uploaded image
@@ -36,7 +36,7 @@ class InnovativeProductController extends Controller
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(800, 600)->save(public_path("frontend/image/innovative/") . $name_gen);
+            Image::make($image)->resize(800, 600)->save("frontend/image/innovative/" . $name_gen);
 
             // Prepare data for insertion
             $data = [

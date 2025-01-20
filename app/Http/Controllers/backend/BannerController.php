@@ -28,7 +28,7 @@ class BannerController extends Controller
     public function Banner_Store(Request $request)
     {
         $request->validate([
-            'banner_img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Ensures the uploaded file is an image
+            'banner_img' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
         $image = $request->file('banner_img'); // Retrieve the uploaded image
@@ -38,7 +38,7 @@ class BannerController extends Controller
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(1920, 1080)->save(public_path("frontend/image/banner/") . $name_gen);
+            Image::make($image)->resize(1920, 1080)->save("frontend/image/banner/" . $name_gen);
 
             // Prepare data for insertion
             $data = [

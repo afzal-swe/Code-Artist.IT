@@ -211,3 +211,60 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
+// Expartics Slider js code start
+// Select the slider container
+
+// Select the slider container
+const slider = document.querySelector('.top_brand_slider');
+
+// Create pagination buttons
+const sliderButtonsContainer = document.createElement('div');
+sliderButtonsContainer.classList.add('slider_buttons');
+
+const topBrandItems = document.querySelectorAll('.top_brand_item');
+topBrandItems.forEach((_, index) => {
+const button = document.createElement('div');
+button.classList.add('slider_button');
+if (index === 0) button.classList.add('active');
+sliderButtonsContainer.appendChild(button);
+});
+
+slider.parentElement.appendChild(sliderButtonsContainer);
+
+// Auto-slide functionality
+let scrollAmount = 0;
+const slideInterval = 3000; // Time in milliseconds
+let currentIndex = 0;
+
+function autoSlide() {
+const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+// Scroll the slider
+if (scrollAmount < maxScroll) {
+  scrollAmount += 200; // Adjust scroll step as needed
+  slider.scrollBy({ left: 200, behavior: 'smooth' });
+  updateActiveButton();
+} else {
+  // Reset to the beginning when reaching the end
+  scrollAmount = 0;
+  slider.scrollTo({ left: 0, behavior: 'smooth' });
+  currentIndex = 0;
+  updateActiveButton();
+}
+}
+
+function updateActiveButton() {
+const buttons = document.querySelectorAll('.slider_button');
+buttons.forEach((button, index) => {
+  button.classList.toggle('active', index === currentIndex);
+});
+currentIndex = (currentIndex + 1) % topBrandItems.length;
+}
+
+// Start the auto-slide
+setInterval(autoSlide, slideInterval);
+
+// Expartics Slider js code End

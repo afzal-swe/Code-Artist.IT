@@ -2,10 +2,10 @@
 
 @php
 $blogs = DB::table('blogs')
-    ->where('status', 1)
-    // ->join('users','blogs.user_id','users.id')
-    // ->select('users.*')
-    ->orderBy('id', 'DESC')
+    ->join('users', 'blogs.user_id', '=', 'users.id') // Proper join syntax
+    ->where('blogs.status', 1) // Scope for the 'blogs' table
+    ->select('blogs.*', 'users.name as user_name', 'users.email as user_email') // Avoid ambiguous column names
+    ->orderBy('blogs.id', 'DESC') // Explicit table prefix for clarity
     ->get();
 @endphp
 
@@ -36,7 +36,7 @@ $blogs = DB::table('blogs')
       
                     <div class="meta d-flex align-items-center">
                       <div class="d-flex align-items-center">
-                        <i class="bi bi-person"></i> <span class="ps-2">{{ $row->name ?? 'Admin' }}</span>
+                        <i class="bi bi-person"></i> <span class="ps-2">{{ $row->user_name ?? 'Unknown' }}</span>
                       </div>
                       {{-- <span class="px-3 text-black-50">/</span> --}}
                       {{-- <div class="d-flex align-items-center">

@@ -2,6 +2,13 @@
 @extends('backend.layouts.app')
 @section('content')
 
+<!-- Add this in your <head> section for Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Add this in your <head> section for Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 <div class="content-wrapper">
@@ -50,7 +57,7 @@
                                 @foreach ($project_status as $key=>$row)
                                     <tr>
                                         <td>{{++$key}}</td>
-                                        <td><img src="" style="height: 40px; width:60px"></td>
+                                        <td><i class="{{ $row->icon }} color-blue flex-shrink-0" style="height: 40px; width:60px"></i></td>
                                         <td>{{$row->title ?? ''}}</td>
                                         <td>{{$row->total ?? ''}}</td>
                                        

@@ -2,7 +2,9 @@
  @extends('frontend.layouts.app')
  @section('containt')
      
-
+  @php
+    $settings = DB::table('website_settings')->first();
+  @endphp
 
  <!-- ======= Breadcrumbs ======= -->
  <div class="breadcrumbs d-flex align-items-center" style="background-image: url({{ asset('frontend/assets/img/breadcrumbs-bg.jpg') }});">
@@ -10,7 +12,7 @@
 
       <h2>Contact</h2>
       <ol>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="{{ route('home_page') }}">Home</a></li>
         <li>Contact</li>
       </ol>
 
@@ -26,7 +28,7 @@
           <div class="info-item  d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-map"></i>
             <h3>Our Address</h3>
-            <p>A108 Adam Street, New York, NY 535022</p>
+            <h6>{{ $settings->address ?? '' }}</h6>
           </div>
         </div><!-- End Info Item -->
 
@@ -34,7 +36,7 @@
           <div class="info-item d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-envelope"></i>
             <h3>Email Us</h3>
-            <p>contact@example.com</p>
+            <p>{{ $settings->support_email ?? '' }}</p>
           </div>
         </div><!-- End Info Item -->
 
@@ -42,7 +44,7 @@
           <div class="info-item  d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-telephone"></i>
             <h3>Call Us</h3>
-            <p>+1 5589 55488 55</p>
+            <p>{{ $settings->phone_two ?? '' }}</p>
           </div>
         </div><!-- End Info Item -->
 
@@ -51,7 +53,8 @@
       <div class="row gy-4 mt-1">
 
         <div class="col-lg-6 ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.888506303687!2d90.32730326137755!3d23.863999056058198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c21670e81f25%3A0x5df3ee386329ad37!2sDIU%20Rd!5e0!3m2!1sen!2sbd!4v1737336685247!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> --}}
         </div><!-- End Google Maps -->
 
         <div class="col-lg-6">

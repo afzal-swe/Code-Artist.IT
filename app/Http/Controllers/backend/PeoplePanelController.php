@@ -25,7 +25,7 @@ class PeoplePanelController extends Controller
             'name' => 'required',
             'designation' => 'required',
             'people_anel' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Ensures the uploaded file is an image
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
         $image = $request->file('image'); // Retrieve the uploaded image
@@ -35,7 +35,7 @@ class PeoplePanelController extends Controller
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(600, 600)->save(public_path("frontend/image/people/") . $name_gen);
+            Image::make($image)->resize(600, 600)->save("frontend/image/people/" . $name_gen);
 
             // Prepare data for insertion
             $data = [

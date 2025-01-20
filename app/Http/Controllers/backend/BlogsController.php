@@ -25,7 +25,7 @@ class BlogsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Ensures the uploaded file is an image
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
         $image = $request->file('image'); // Retrieve the uploaded image
@@ -35,7 +35,7 @@ class BlogsController extends Controller
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(1024, 768)->save(public_path("frontend/image/blogs/") . $name_gen);
+            Image::make($image)->resize(1024, 768)->save("frontend/image/blogs/" . $name_gen);
 
             // Prepare data for insertion
             $data = [

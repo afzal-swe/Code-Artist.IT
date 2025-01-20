@@ -1,9 +1,41 @@
+@php
+    $seo = DB::table('seos')->first();
+    $settings = DB::table('website_settings')->first();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RSB Panel</title>
+  @if ($settings !== Null)
+  <title>{{ $settings->website_name }}</title>
+  @else
+  <title>Testing Site</title>
+  @endif
+
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+        
+        @isset($seo)
+            
+        
+        <meta property="og:type" content="Website">
+        <meta property="og:title" content="{{ $seo->meta_title }}">
+        <meta property="og:description" content="{{ $seo->meta_description }}">
+
+
+        <meta name="author" content="{{ $seo->meta_author }}">
+        <meta name="keyword" content="{{ $seo->meta_keyword }}">
+        <meta name="description" content="{{ $seo->meta_description }}">
+        <meta name="google-verification" content="{{ $seo->google_verification }}">
+        <meta name="google-analytics" content="{{ $seo->google_analytics }}">
+        <meta name="alexa-analytics" content="{{ $seo->alexa_analytics }}">
+        <title>{{ $seo->meta_title }}</title>
+        @endisset
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{ asset($settings->favicon ?? 'image/No_Image_Available.jpg') }}">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">

@@ -23,7 +23,7 @@ class OurExparticsController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Ensures the uploaded file is an image
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
         $image = $request->file('image'); // Retrieve the uploaded image
@@ -33,7 +33,7 @@ class OurExparticsController extends Controller
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(546, 546)->save(public_path("frontend/image/our_expartics/") . $name_gen);
+            Image::make($image)->resize(546, 546)->save("frontend/image/our_expartics/" . $name_gen);
 
             // Prepare data for insertion
             $data = [

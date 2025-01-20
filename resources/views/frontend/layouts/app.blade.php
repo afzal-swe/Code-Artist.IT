@@ -1,17 +1,38 @@
+
+@php
+    $seo = DB::table('seos')->first();
+    $settings = DB::table('website_settings')->first();
+@endphp
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>{{ $settings->website_name }}</title>
 
-  <title>Robo Soluations BD</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+
+@isset($seo)
+            
+        
+<meta property="og:type" content="Website">
+<meta property="og:title" content="{{ $seo->meta_title }}">
+<meta property="og:description" content="{{ $seo->meta_description }}">
+
+
+<meta name="author" content="{{ $seo->meta_author }}">
+<meta name="keyword" content="{{ $seo->meta_keyword }}">
+<meta name="description" content="{{ $seo->meta_description }}">
+<meta name="google-verification" content="{{ $seo->google_verification }}">
+<meta name="google-analytics" content="{{ $seo->google_analytics }}">
+<meta name="alexa-analytics" content="{{ $seo->alexa_analytics }}">
+<title>{{ $seo->meta_title }}</title>
+@endisset
+
 
   <!-- Favicons -->
-  <link href="{{ asset('frontend/assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset($settings->favicon ?? 'frontend/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset($settings->favicon ?? 'frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

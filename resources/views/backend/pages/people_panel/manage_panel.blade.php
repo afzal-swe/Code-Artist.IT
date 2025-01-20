@@ -123,7 +123,7 @@ $table->string('intern')->nullable()->default(4); --}}
                                         <td>
                                             
                                             <a href="#" class="btn btn-info btn-sm edit" title="Edit Data"><i class="fas fa-edit"></i></a>
-                                            <a href="{{ route('people_panel.status',$row->id) }}" id="delete" class="btn btn-danger btn-sm delete" title="Delete Data"><i class="fas fa-trash-alt"></i></a>
+                                            <a href="{{ route('people_panel.delete',$row->id) }}" id="delete" class="btn btn-danger btn-sm delete" title="Delete Data"><i class="fas fa-trash-alt"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach

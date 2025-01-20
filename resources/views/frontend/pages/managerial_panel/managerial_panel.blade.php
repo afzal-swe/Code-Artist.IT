@@ -1,5 +1,8 @@
 @extends('frontend.layouts.app')
 @section('containt')
+@php
+    $people_panels = DB::table('people__panels')->where('status',1)->where('people_anel',2)->get();
+@endphp
 
 
 <!-- ======= Breadcrumbs ======= -->
@@ -27,111 +30,76 @@
       </div>
 
       <div class="row gy-5">
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+        @forelse ($people_panels as $row)
+        <div class="col-lg-3 col-md-6 member" >
+          <div class="member-img">
+            <img src="{{ asset($row->image ?? '') }}" class="img-fluid" alt="{{$row->name ?? ''}}">
+          </div>
+          <div class="member-info text-center">
+            <h4>{{$row->name ?? ''}}</h4>
+            <span>{{$row->designation ?? ''}}</span>
+            <div class="social">
+              <a href="{{$row->linkdin ?? '#'}}"><i class="bi bi-linkedin"></i></a>
+              <a href="{{$row->facebook ?? '#'}}"><i class="bi bi-facebook"></i></a>
+              <a href="{{$row->instragram ?? '#'}}"><i class="bi bi-instagram"></i></a>
+              <a href="{{$row->github ?? '#'}}"><i class="bi bi-github"></i></a>
+              <a href="{{$row->website ?? '#'}}"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        @empty
+        <div class="col-lg-3 col-md-6 member" >
           <div class="member-img">
             <img src="{{ asset('frontend/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
           </div>
           <div class="member-info text-center">
             <h4>Walter White</h4>
             <span>Chief Executive Officer</span>
-            <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-          <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-2.jpg') }}" class="img-fluid" alt="">
             <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
             </div>
           </div>
-          <div class="member-info text-center">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-            <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+        </div>
+        
+        <div class="col-lg-3 col-md-6 member" >
           <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-3.jpg') }}" class="img-fluid" alt="">
+            <img src="{{ asset('frontend/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="member-info text-center">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
             <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
             </div>
           </div>
-          <div class="member-info text-center">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+        </div>
+        <div class="col-lg-3 col-md-6 member">
           <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-4.jpg') }}" class="img-fluid" alt="">
+            <img src="{{ asset('frontend/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="member-info text-center">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
             <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-          <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-5.jpg') }}" class="img-fluid" alt="">
-            <div class="social">
               <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
             </div>
           </div>
-          <div class="member-info text-center">
-            <h4>Brian Doe</h4>
-            <span>Marketing</span>
-            <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-          <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-6.jpg') }}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Josepha Palas</h4>
-            <span>Operation</span>
-            <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
-          </div>
-        </div><!-- End Team Member -->
-
+        </div>
+        @endforelse
+   
       </div>
-
     </div>
   </section><!-- End Our Team Section -->
 

@@ -27,7 +27,7 @@ class ClientFeedbackController extends Controller
             'name' => 'required',
             'designation' => 'required',
             'description' => 'required',
-            'client_img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Ensures the uploaded file is an image
+            'client_img' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
         $image = $request->file('client_img'); // Retrieve the uploaded image
@@ -37,7 +37,7 @@ class ClientFeedbackController extends Controller
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(400, 400)->save(public_path("frontend/image/feedback/") . $name_gen);
+            Image::make($image)->resize(400, 400)->save("frontend/image/feedback/" . $name_gen);
 
             // Prepare data for insertion
             $data = [
