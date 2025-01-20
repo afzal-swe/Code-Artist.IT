@@ -24,17 +24,17 @@ class OurTimeLineController extends Controller
             'title' => 'required',
             'description' => 'required',
             'timeline_options' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
+            'image' => 'required', // Ensures the uploaded file is an image
         ]);
 
-        $image = $request->file('image'); // Retrieve the uploaded image
+        $image = $request->image; // Retrieve the uploaded image
 
         if ($image) {
             // Generate a unique name for the image
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(800, 600)->save("frontend/image/out_timeline/" . $name_gen);
+            Image::make($image)->resize(800, 600)->save("backend/image/out_timeline/" . $name_gen);
 
             // Prepare data for insertion
             $data = [
@@ -42,7 +42,7 @@ class OurTimeLineController extends Controller
                 'description' => $request->description,
                 'timeline_options' => $request->timeline_options,
                 'status' => $request->status,
-                'image' => "frontend/image/out_timeline/" . $name_gen,
+                'image' => "backend/image/out_timeline/" . $name_gen,
                 'created_at' => Carbon::now(),
             ];
 

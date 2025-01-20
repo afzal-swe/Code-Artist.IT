@@ -38,12 +38,12 @@ class WebsiteSettingController extends Controller
             $favicon = $request->file('favicon');
 
             $logo_name = $name . '.' . $logo->getClientOriginalExtension();
-            Image::make($logo)->resize(320, 120)->save("frontend/image/website/logo/" . $logo_name);
-            $logo_url = "frontend/image/website/logo" . $logo_name;
+            Image::make($logo)->resize(320, 120)->save("backend/image/website/logo/" . $logo_name);
+            $logo_url = "backend/image/website/logo" . $logo_name;
 
             $favicon_name = $name . '.' . $favicon->getClientOriginalExtension();
-            Image::make($favicon)->resize(42, 42)->save("frontend/image/website/favicon/" . $favicon_name);
-            $favicon_url = "frontend/image/website/favicon/" . $favicon_name;
+            Image::make($favicon)->resize(42, 42)->save("backend/image/website/favicon/" . $favicon_name);
+            $favicon_url = "backend/image/website/favicon/" . $favicon_name;
 
             Website_settings::insert([
                 'website_name' => $request->website_name,
@@ -108,13 +108,13 @@ class WebsiteSettingController extends Controller
                 unlink($image_logo);
 
                 $logo_name = $name . '.' . $request_logo->getClientOriginalExtension();
-                Image::make($request_logo)->resize(320, 120)->save("frontend/image/website/logo/" . $logo_name);
-                $data['logo'] = "frontend/image/website/logo/" . $logo_name;
+                Image::make($request_logo)->resize(320, 120)->save("backend/image/website/logo/" . $logo_name);
+                $data['logo'] = "backend/image/website/logo/" . $logo_name;
             }
 
             $logo_name = $name . '.' . $request_logo->getClientOriginalExtension();
-            Image::make($request_logo)->resize(320, 120)->save("frontend/image/website/logo/" . $logo_name);
-            $data['logo'] = "frontend/image/website/logo/" . $logo_name;
+            Image::make($request_logo)->resize(320, 120)->save("backend/image/website/logo/" . $logo_name);
+            $data['logo'] = "backend/image/website/logo/" . $logo_name;
         }
 
         if ($request_favicon) {
@@ -125,13 +125,13 @@ class WebsiteSettingController extends Controller
                 unlink($old_favicon);
 
                 $favicon_name = $name . '.' . $request_favicon->getClientOriginalExtension();
-                Image::make($request_favicon)->resize(32, 32)->save("frontend/image/website/favicon/" . $favicon_name);
-                $data['favicon'] = "frontend/image/website/favicon/" . $favicon_name;
+                Image::make($request_favicon)->resize(32, 32)->save("backend/image/website/favicon/" . $favicon_name);
+                $data['favicon'] = "backend/image/website/favicon/" . $favicon_name;
             }
 
             $favicon_name = $name . '.' . $request_favicon->getClientOriginalExtension();
-            Image::make($request_favicon)->resize(32, 32)->save("frontend/image/website/favicon/" . $favicon_name);
-            $data['favicon'] = "frontend/image/website/favicon/" . $favicon_name;
+            Image::make($request_favicon)->resize(32, 32)->save("backend/image/website/favicon/" . $favicon_name);
+            $data['favicon'] = "backend/image/website/favicon/" . $favicon_name;
         }
 
         Website_settings::where('id', $update)->update($data);

@@ -26,17 +26,17 @@ class DevelopmentSoftwareController extends Controller
             'title' => 'required',
             'link' => 'required',
             'development_options' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
+            'image' => 'required', // Ensures the uploaded file is an image
         ]);
 
-        $image = $request->file('image'); // Retrieve the uploaded image
+        $image = $request->image; // Retrieve the uploaded image
 
         if ($image) {
             // Generate a unique name for the image
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(1024, 768)->save("frontend/image/our_development/" . $name_gen);
+            Image::make($image)->resize(1024, 768)->save("backend/image/our_development/" . $name_gen);
 
             // Prepare data for insertion
             $data = [
@@ -44,7 +44,7 @@ class DevelopmentSoftwareController extends Controller
                 'link' => $request->link,
                 'development_options' => $request->development_options,
                 'status' => $request->status,
-                'image' => "frontend/image/our_development/" . $name_gen,
+                'image' => "backend/image/our_development/" . $name_gen,
                 'created_at' => Carbon::now(),
             ];
 

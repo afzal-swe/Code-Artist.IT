@@ -28,21 +28,22 @@ class BannerController extends Controller
     public function Banner_Store(Request $request)
     {
         $request->validate([
-            'banner_img' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
+            'banner_img' => 'required', // Ensures the uploaded file is an image
+            // 'banner_img' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
         ]);
 
-        $image = $request->file('banner_img'); // Retrieve the uploaded image
+        $image = $request->banner_img; // Retrieve the uploaded image
 
         if ($image) {
             // Generate a unique name for the image
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(1920, 1080)->save("frontend/image/banner/" . $name_gen);
+            Image::make($image)->resize(1920, 1080)->save("backend/image/banner/" . $name_gen);
 
             // Prepare data for insertion
             $data = [
-                'banner_img' => "frontend/image/banner/" . $name_gen,
+                'banner_img' => "backend/image/banner/" . $name_gen,
                 'status' => $request->status,
                 'created_at' => Carbon::now(),
             ];

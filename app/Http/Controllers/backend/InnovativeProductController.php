@@ -26,24 +26,24 @@ class InnovativeProductController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'products_img' => 'required|image|mimes:jpeg,png,jpg,gif', // Ensures the uploaded file is an image
+            'products_img' => 'required', // Ensures the uploaded file is an image
         ]);
 
-        $image = $request->file('products_img'); // Retrieve the uploaded image
+        $image = $request->products_img; // Retrieve the uploaded image
 
         if ($image) {
             // Generate a unique name for the image
             $name_gen = uniqid() . '.' . $image->getClientOriginalExtension();
 
             // Resize and save the image using Intervention Image
-            Image::make($image)->resize(800, 600)->save("frontend/image/innovative/" . $name_gen);
+            Image::make($image)->resize(800, 600)->save("backend/image/innovative/" . $name_gen);
 
             // Prepare data for insertion
             $data = [
                 'title' => $request->title,
                 'description' => $request->description,
                 'status' => $request->status,
-                'products_img' => "frontend/image/innovative/" . $name_gen,
+                'products_img' => "backend/image/innovative/" . $name_gen,
                 'created_at' => Carbon::now(),
             ];
 
