@@ -1,8 +1,5 @@
 @extends('frontend.layouts.app')
 @section('containt')
-@php
-    $people_panels = DB::table('people__panels')->where('status',1)->where('people_anel',2)->get();
-@endphp
 
 
 <!-- ======= Breadcrumbs ======= -->
@@ -12,7 +9,7 @@
       <h2>Managerial Panel</h2>
       <ol>
         <li><a href="{{ route('home_page') }}">Home</a></li>
-        <li>About</li>
+        <li>Managerial Panel</li>
       </ol>
 
     </div>
@@ -64,39 +61,7 @@
             </div>
           </div>
         </div>
-        
-        <div class="col-lg-3 col-md-6 member" >
-          <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
-          </div>
-          <div class="member-info text-center">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 member">
-          <div class="member-img">
-            <img src="{{ asset('frontend/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
-          </div>
-          <div class="member-info text-center">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-        </div>
+       
         @endforelse
    
       </div>

@@ -1,10 +1,15 @@
+
+@php
+  $settings = DB::table('website_settings')->first();
+@endphp
+
 <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="#" class="logo d-flex align-items-center">
+      <a href="{{ route('home_page') }}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Robo Soluations BD<span>.</span></h1>
+        <img src="{{ asset($settings->logo ?? 'Null') }}" alt=""> 
+        <h1>{{ $settings->website_name ?? 'Null' }}<span>.</span></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -20,17 +25,17 @@
               <li><a href="#">Our Portfolio</a></li>
               <li><a href="#">Carrrer</a></li>
               <li><a href="#">Become an Affiliator</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="{{ route('faq.page') }}">FAQ</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="#"><span>People</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Advisory Panel</a></li>
+              <li><a href="{{ route('advisory_panel.view') }}">Advisory Panel</a></li>
               <li><a href="{{ route('managerial_panel.view') }}">Managerial Panel</a></li>
-              <li><a href="#">Full Time Employee</a></li>
-              <li><a href="#">Project Based Employee</a></li>
-              <li><a href="#">Intern</a></li>
+              <li><a href="{{ route('full_time_employee.view') }}">Full Time Employee</a></li>
+              <li><a href="{{ route('project_based_empolyee.view') }}">Project Based Employee</a></li>
+              <li><a href="{{ route('intern.view') }}">Intern</a></li>
             </ul>
           </li>
 
@@ -128,3 +133,28 @@
 
     </div>
   </header>
+
+  @php
+    $notice = DB::table('notices')->where('status',1)->get();
+  @endphp
+
+
+  <div class="notice-bar">
+      <div class="row scroll">
+          <div class="col-md-2 col-sm-3 scroll_01 ">
+            Headline : 
+          </div>
+          <div class="col-md-10 col-sm-9 scroll_02">
+              <marquee>
+                @forelse ($notice as $row)
+                * {{ $row->title}}
+                @empty
+                  * Not Active
+                @endforelse
+                 
+              </marquee>
+          </div>
+      </div>
+  </div>
+
+

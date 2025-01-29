@@ -19,7 +19,7 @@
             <div class="top_brand_slider">
                 <!-- item -->
                 @forelse ($service_areas as $row)
-                <a href="" class="top_brand_item">
+                <a href="#" class="top_brand_item">
                     <!-- image -->
                     <div class="top_brand_image">
                         <img src="{{ asset($row->country_flag ?? '') }}" alt="{{$row->country_name ?? ''}}">
@@ -28,7 +28,7 @@
                     <div class="brand_item_name">{{$row->country_name ?? ''}}</div>
                 </a>
                 @empty
-                <a href="" class="top_brand_item">
+                <a href="#" class="top_brand_item">
                     <!-- image -->
                     <div class="top_brand_image">
                         <img src="{{ asset('frontend/image/brand/FOSSIL.png') }}" alt="">

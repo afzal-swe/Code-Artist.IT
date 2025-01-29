@@ -3,10 +3,18 @@
 @section('containt')
 
  <!-- ======= Banner Section ======= -->
+ 
   @include('frontend.layouts.manage_main_pages.banner')
 
 
 <main id="main">
+
+  <div class="whatrsapp_float">
+
+    <a href="https://wa.me/+8801701558100" target="_blank">
+      <img src="{{ asset('frontend/image/whatsapp.png') }}" alt="" width="55px;">
+    </a>
+  </div>
 
   <!-- ======= Testimonials Section ======= -->
    @include('frontend.layouts.manage_main_pages.feedback')

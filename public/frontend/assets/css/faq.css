@@ -1,0 +1,31 @@
+
+.faq-container {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+.faq-title {
+    font-size: 44px;
+    font-weight: bold;
+    color: #ff66a3;
+    text-transform: uppercase;
+}
+.faq-item {
+    background: #f5f5f5;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.faq-content {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.icon {
+    font-size: 20px;
+}

@@ -18,6 +18,8 @@ use App\Http\Controllers\backend\SeoController;
 use App\Http\Controllers\backend\SocialController;
 use App\Http\Controllers\backend\WebsiteSettingController;
 use App\Http\Controllers\backend\PeoplePanelController;
+use App\Http\Controllers\backend\FaqController;
+use App\Http\Controllers\frontend\ContactController;
 
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -150,9 +152,25 @@ Route::middleware(['auth', 'verified'])->group(function () {
             });
         }); //end
 
+        // Services Areas Group Route Section
+        Route::group(['prefix' => 'contact'], function () {
+            Route::controller(ContactController::class)->group(function () {
+                Route::get('/', 'Contact_View')->name('contact.view');
+                Route::get('/delete/{id}', 'Contact_Delete')->name('contact.delete');
+            });
+        }); //end
+
         // Settings Areas Group Route Section
         Route::group(['prefix' => 'settings'], function () {
 
+            Route::group(['prefix' => 'faq'], function () {
+                Route::controller(FaqController::class)->group(function () {
+                    Route::get('/', 'Faq_View')->name('faq.view');
+                    Route::post('/store', 'Faq_Store')->name('faq.store');
+                    Route::get('/status/{id}', 'Faq_Status')->name('faq.status');
+                    Route::get('/delete/{id}', 'Faq_Delete')->name('faq.delete');
+                });
+            }); //end
             Route::group(['prefix' => 'notice'], function () {
                 Route::controller(NoticeController::class)->group(function () {
                     Route::get('/', 'Notice_View')->name('notice.view');

@@ -49,13 +49,10 @@ class BannerController extends Controller
             ];
 
             // Insert into the database
-            Banner::create($data);
+            Banner::insert($data);
 
             // Redirect with a success notification
-            $notification = [
-                'messege' => 'Banner added successfully!',
-                'alert-type' => 'success',
-            ];
+            $notification = array('messege' => 'Banner added successfully!', 'alert-type' => 'success');
             return redirect()->back()->with($notification);
         } else {
             // Redirect with an error notification if no image was uploaded

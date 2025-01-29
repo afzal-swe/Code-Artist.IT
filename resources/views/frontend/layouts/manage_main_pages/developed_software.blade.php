@@ -60,7 +60,7 @@ $others = DB::table('development__software')
                     <h4>Software</h4>
                     <p>{{ $row->title ?? '' }}</p>
                     <a href="{{ asset($row->image ?? '') }}" title="Software" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ $row->link ?? '' }}" target="blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('project_details.page') }}"  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ $others = DB::table('development__software')
                     <h4>Remodeling 1</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
                     <a href="{{ asset('frontend/assets/img/projects/remodeling-1.jpg') }}" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ $others = DB::table('development__software')
                     <h4>Mobile App</h4>
                     <p>{{ $row->title ?? '' }}</p>
                     <a href="{{ asset($row->image ?? '') }}" title="Mobile App" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ $row->link ?? '' }}" target="blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('project_details.page') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ $others = DB::table('development__software')
                     <h4>IoT Devices</h4>
                     <p>{{ $row->title ?? '' }}</p>
                     <a href="{{ asset($row->image ?? '') }}" title="IoT Devices" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ $row->link ?? '' }}" target="blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('project_details.page') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -154,7 +154,7 @@ $others = DB::table('development__software')
                     <h4>Others</h4>
                     <p>{{ $row->title ?? '' }}</p>
                     <a href="{{ asset($row->image ?? '') }}" title="Others" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ $row->link ?? '' }}" target="blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('project_details.page') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>

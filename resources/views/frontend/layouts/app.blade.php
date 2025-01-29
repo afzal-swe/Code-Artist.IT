@@ -49,6 +49,8 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('frontend/assets/css/main.css') }}" rel="stylesheet">
+  <link href="{{ asset('frontend/assets/css/faq.css') }}" rel="stylesheet">
+
 
 </head>
 
@@ -56,6 +58,7 @@
 
   <!-- ======= Header ======= -->
   @include('frontend.layouts.partial.header')
+  
   <!-- End Header -->
 
  
@@ -71,6 +74,8 @@
 
   <div id="preloader"></div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <!-- Vendor JS Files -->
   <script src="{{ asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('frontend/assets/vendor/aos/aos.js') }}"></script>
@@ -82,6 +87,17 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+
+
+  {{-- faq js --}}
+  <script>
+    $(document).ready(function(){
+        $(".faq-item").click(function(){
+            $(this).next(".faq-content").slideToggle();
+            $(this).find(".icon").text($(this).find(".icon").text() === "+" ? "-" : "+");
+        });
+    });
+  </script>
 
 </body>
 

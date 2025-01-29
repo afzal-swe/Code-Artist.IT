@@ -14,6 +14,11 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
+              {{-- <a href="{{ route('home_page') }}" class="footer-logo d-flex">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="{{ asset($settings->logo ?? 'Null') }}" alt=""> 
+                <h1>{{ $settings->website_name ?? 'Null' }}<span>.</span></h1>
+              </a> --}}
               <h3>{{ $settings->website_name }}</h3>
               <p>
                 {{ $settings->address }}<br>
@@ -30,7 +35,7 @@
             </div>
           </div><!-- End footer info column-->
 
-          <div class="col-lg-2 col-md-3 footer-links">
+          <div class="col-lg-2 col-md-6 footer-links">
             <h4 class="text-info">Useful Links</h4><hr>
             <ul>
               <li><a href="#">Home</a></li>
@@ -42,7 +47,7 @@
           </div><!-- End footer links column-->
 
           
-          <div class="col-lg-3 col-md-3 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4 class="text-info">Website Development</h4><hr>
             <ul>
               <li><a href="#">Website Development Service</a></li>
@@ -55,7 +60,7 @@
             </ul>
           </div><!-- End footer links column-->
 
-          <div class="col-lg-3 col-md-3 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4 class="text-info">Software Development</h4><hr>
             <ul >
               <li><a href="#">Human Resource Management</a></li>

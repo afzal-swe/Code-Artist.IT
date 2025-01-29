@@ -45,7 +45,7 @@ $blogs = DB::table('blogs')
                     </div>
       
                     <hr>
-                    <a href="#" class="readmore stretched-link d-flex justify-content-end"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('blog_details.page') }}" class="readmore stretched-link d-flex justify-content-end"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
       
                   </div>
                 </div>

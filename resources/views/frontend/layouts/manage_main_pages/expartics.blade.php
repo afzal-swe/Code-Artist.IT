@@ -22,7 +22,7 @@
             <div class="top_brand_slider">
                 <!-- item -->
                 @forelse ($expartics as $row)
-                <a href="" class="top_brand_item">
+                <a href="#" class="top_brand_item">
                     <!-- image -->
                     <div class="top_brand_image">
                         <img src="{{ asset($row->image ?? '') }}" alt="{{ $row->title ?? '' }}">
@@ -31,7 +31,7 @@
                     <div class="brand_item_name">{{ $row->title ?? '' }}</div>
                 </a>
                 @empty
-                <a href="" class="top_brand_item">
+                <a href="#" class="top_brand_item">
                     <!-- image -->
                     <div class="top_brand_image">
                         <img src="{{ asset('frontend/image/brand/FOSSIL.png') }}" alt="">

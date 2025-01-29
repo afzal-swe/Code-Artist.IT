@@ -175,7 +175,7 @@
 <script src="{{ asset ('backend/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
 <script src="{{ asset ('backend/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset ('backend/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
-<script src="{{ asset('backend/plugins/toastr/toastr.min.js') }}"></script>
+<script src="{{ asset ('backend/plugins/toastr/toastr.min.js') }}"></script>
 
 <!-- Select2 -->
 <script src="{{ asset ('backend/plugins/select2/js/select2.full.min.js')}}"></script>
@@ -224,25 +224,7 @@
   });
 </script>
 
-<script>
-    @if (Session::has('messege'))
-      var type="{{Session::get('alert-type','info')}}"
-      switch(type){
-        case 'info':
-          toastr.info("{{ Session::get('messege') }}");
-          break;
-        case 'success':
-          toastr.success("{{ Session::get('messege') }}");
-          break;
-        case 'warning':
-          toastr.warning("{{ Session::get('messege') }}");
-          break;
-        case 'error':
-          toastr.error("{{ Session::get('messege') }}");
-          break;
-    }   
-    @endif
-</script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 
@@ -252,10 +234,6 @@
   const today = new Date().toISOString().split('T')[0];
   dateInput.value = today;
 </script>
-
-{{-- before logout showing alert message --}}
-
-
 
 <script>
   $(function () {
@@ -267,7 +245,30 @@
       mode: "htmlmixed",
       theme: "monokai"
     });
-  })
+  });
 </script>
+
+
+{{-- before logout showing alert message --}}
+<script>
+  @if(Session::has('messege'))
+    var type="{{Session::get('alert-type','info')}}"
+    switch(type){
+      case 'info':
+          toastr.info("{{ Session::get('messege') }}");
+          break;
+      case 'success':
+          toastr.success("{{ Session::get('messege') }}");
+          break;
+      case 'warning':
+          toastr.warning("{{ Session::get('messege') }}");
+          break;
+      case 'error':
+          toastr.error("{{ Session::get('messege') }}");
+          break;
+  }   
+  @endif
+</script>
+
 </body>
 </html>

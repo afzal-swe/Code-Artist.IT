@@ -25,7 +25,7 @@ $sister_concerns = DB::table('sister__concerns')
                     </div>
                     <h3>{{ Str::of($row->title ?? '')->limit(20) }}</h3>
                     <p>{!! Str::of($row->description ?? '')->limit(130) !!}</p>
-                    <a href="#" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('sister_concern_details.page') }}" class="readmore stretched-link d-flex justify-content-end">Learn more <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div><!-- End Service Item -->
         @empty

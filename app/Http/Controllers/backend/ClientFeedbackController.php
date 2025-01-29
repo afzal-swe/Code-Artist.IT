@@ -53,10 +53,7 @@ class ClientFeedbackController extends Controller
             Client_Feedback::create($data);
 
             // Redirect with a success notification
-            $notification = [
-                'messege' => 'Client Feedback added successfully!',
-                'alert-type' => 'success',
-            ];
+            $notification = array('messege' => 'Client Feedback added successfully!', 'alert-type' => 'success');
             return redirect()->back()->with($notification);
         } else {
             // Redirect with an error notification if no image was uploaded

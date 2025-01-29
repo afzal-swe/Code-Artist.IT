@@ -38,7 +38,7 @@ class WebsiteSettingController extends Controller
             $favicon = $request->file('favicon');
 
             $logo_name = $name . '.' . $logo->getClientOriginalExtension();
-            Image::make($logo)->resize(320, 120)->save("backend/image/website/logo/" . $logo_name);
+            Image::make($logo)->resize(630, 630)->save("backend/image/website/logo/" . $logo_name);
             $logo_url = "backend/image/website/logo" . $logo_name;
 
             $favicon_name = $name . '.' . $favicon->getClientOriginalExtension();
@@ -108,12 +108,12 @@ class WebsiteSettingController extends Controller
                 unlink($image_logo);
 
                 $logo_name = $name . '.' . $request_logo->getClientOriginalExtension();
-                Image::make($request_logo)->resize(320, 120)->save("backend/image/website/logo/" . $logo_name);
+                Image::make($request_logo)->resize(630, 630)->save("backend/image/website/logo/" . $logo_name);
                 $data['logo'] = "backend/image/website/logo/" . $logo_name;
             }
 
             $logo_name = $name . '.' . $request_logo->getClientOriginalExtension();
-            Image::make($request_logo)->resize(320, 120)->save("backend/image/website/logo/" . $logo_name);
+            Image::make($request_logo)->resize(630, 630)->save("backend/image/website/logo/" . $logo_name);
             $data['logo'] = "backend/image/website/logo/" . $logo_name;
         }
 
